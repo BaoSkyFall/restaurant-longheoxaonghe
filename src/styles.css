@@ -1,0 +1,27 @@
+
+ /*@import 'assets/css/owl.carousel.min.css';*/
+/* @import 'assets/css/responsive.css'; */
+/* @import 'assets/css/responsive.css.map'; */
+/*@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss';*/
+/*@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default.scss';*/
+ @import 'assets/css/foody.min.css';
+
+@import 'assets/css/style.css';
+
+
+@import '~ngx-toastr/toastr';
+/*@import '~ngx-toastr/toastr-bs4-alert.scss';*/
+
+
+body {
+  color: black;
+  font-weight: 400;
+}
+.cursor-pointer{
+  cursor:pointer!important;
+}
+.color-blue{
+  color:#0C2F50!important
+}
+
+

@@ -1,0 +1,105 @@
+<footer class="footer-area mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="footer-widget">
+          <a href="index.html">
+            <img src="assets/img/logo-2.png" alt="logo">
+          </a>
+          <ul>
+            <li>
+              <i class="icofont-phone"></i>
+              <a href="tel:0979359600">
+                0979359660
+              </a>
+            </li>
+
+            <li>
+              <i class="icofont-ui-message"></i>
+              <a href="mailto:dpiglobal@gmail.com">
+                sales@dpig-logistics.com
+              </a>
+            </li>
+
+            <li>
+              <i class="icofont-location-pin"></i>
+              {{'footer.address'|translate}}
+            </li>
+          </ul>
+
+          <div class="footer-social">
+            <a href="#" target="_blank">
+              <i class="icofont-facebook"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="icofont-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="icofont-twitter"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="icofont-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="footer-widget">
+          <a [routerLink]="['','services']">
+            <h3>{{'footer.services.title'|translate}}
+            </h3>
+          </a>
+          <ul>
+            <li>
+              <a [routerLink]="['','services','air-freight']">{{'footer.services.subtitle_1'|translate}}</a>
+            </li>
+            <li>
+              <a [routerLink]="['','services','road-freight']">{{'footer.services.subtitle_2'|translate}}</a>
+            </li>
+            <li>
+              <a [routerLink]="['','services','ocean-freight']">{{'footer.services.subtitle_3'|translate}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="footer-widget">
+          <h3>{{'footer.supports.title'|translate}}</h3>
+            <ul>
+              <li>
+                <a [routerLink]="['','contact-us']">{{'footer.supports.contact_us'|translate}}</a>
+              </li>
+              <li>
+                <a [routerLink]="['','about']">{{'footer.supports.about_us'|translate}}</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="footer-widget">
+          <h3>{{'footer.quick_links.title'|translate}}</h3>
+          <ul>
+            <li>
+              <a [routerLink]="['']">{{'footer.quick_links.home'|translate}}</a>
+            </li>
+            <li>
+              <a [routerLink]="['','about']">{{'footer.quick_links.abouts'|translate}}</a>
+            </li>
+            <li>
+              <a [routerLink]="['','services']">{{'footer.quick_links.services'|translate}}</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="lines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</footer>

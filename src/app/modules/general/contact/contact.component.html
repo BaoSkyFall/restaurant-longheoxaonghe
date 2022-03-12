@@ -1,0 +1,116 @@
+<!-- Contact Card Section Start -->
+<div class="contact-card-section pt-100 pb-70">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="contact-card">
+          <i class="icofont-phone"></i>
+          <a href="tel:+1012345678">0979 359 660</a>
+          <a >&nbsp;
+          </a>
+<!--          <a href="tel:+1087643210">+1087643210</a>-->
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="contact-card">
+          <i class="icofont-ui-message"></i>
+          <a href="mailto:hello@fixa.com">sales@dpig-logistics.com</a>
+          <a >&nbsp;
+          </a>
+<!--          <a href="mailto:contact@fixa.com">contact@fixa.com</a>-->
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6 offset-lg-0 offset-sm-3">
+        <div class="contact-card">
+          <i class="icofont-location-pin"></i>
+          <ul>
+            <li>{{'footer.address'|translate}}</li>
+<!--            <li>32/D, New York, USA</li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Card Section End -->
+
+<!-- Contact Section Start -->
+<section class="contact-section contact-style-two pb-100">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2 class="color-blue">{{'contact.title'|translate}}</h2>
+<!--      <p class="color-blue">Found parents would couldn't said on. That, feedback there made he was may blind you simple, its yet a own blind you ago hand.</p>-->
+    </div>
+
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="contact-area">
+          <form [formGroup]="rf"
+
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input formControlName="name" type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="{{'contact.name.placeholder'|translate}}">
+                  <app-error-messages
+                    [control]="rf?.get('name')"
+                    [messageObject]="{labelName:'Name'}"
+                  ></app-error-messages>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input formControlName="email" type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="{{'contact.email.placeholder'|translate}}">
+                  <app-error-messages
+                    [control]="rf?.get('email')"
+                    [messageObject]="{labelName:'Email'}"
+                  ></app-error-messages>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input  formControlName="phoneNumber" type="number" name="number" id="number" class="form-control" required data-error="Please enter your number" placeholder="{{'contact.phone.placeholder'|translate}}">
+                  <app-error-messages
+                    [control]="rf?.get('phoneNumber')"
+                    [messageObject]="{labelName:'Phone Number'}"
+                  ></app-error-messages>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input formControlName="subject" type="text" name="subject" id="subject" class="form-control" required data-error="Please enter your subject" placeholder="{{'contact.subject.placeholder'|translate}}">
+                  <app-error-messages
+                    [control]="rf?.get('subject')"
+                    [messageObject]="{labelName:'Subject'}"
+                  ></app-error-messages>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12">
+                <div class="form-group">
+                  <textarea formControlName="message" name="message" class="message-field" id="message" cols="30" rows="5" required data-error="Please type your message" placeholder="{{'contact.message.placeholder'|translate}}"></textarea>
+                  <app-error-messages
+                    [control]="rf?.get('message')"
+                    [messageObject]="{labelName:'Message'}"
+                  ></app-error-messages>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12 text-center">
+                <button  class="default-btn contact-btn" (click)="onSubmit()">
+                  {{'contact.button.submit'|translate}}
+                </button>
+
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

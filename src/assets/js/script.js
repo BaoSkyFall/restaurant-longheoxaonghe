@@ -5,7 +5,7 @@ $(document).ready(function($) {
 
 	/* global google, DevSolutionSkill: false */
 	/*jshint -W018 */
-	
+
 	/*-------------------------------------------------*/
 	/* =  portfolio isotope
 	/*-------------------------------------------------*/
@@ -36,7 +36,7 @@ $(document).ready(function($) {
 			var selector = $filter.find('a.active').attr('data-filter');
 
 			try {
-				$container.isotope({ 
+				$container.isotope({
 					filter	: selector,
 					animationOptions: {
 						duration: 750,
@@ -48,13 +48,13 @@ $(document).ready(function($) {
 			}
 			return false;
 		});
-		
-		// Isotope Filter 
+
+		// Isotope Filter
 		$filter.find('a').on('click', function(){
 			var selector = $(this).attr('data-filter');
 
 			try {
-				$container.isotope({ 
+				$container.isotope({
 					filter	: selector,
 					animationOptions: {
 						duration: 750,
@@ -89,7 +89,7 @@ $(document).ready(function($) {
 
 	} catch(err) {
 	}
-	
+
 	/*-------------------------------------------------*/
 	/* =  OWL carousell
 	/*-------------------------------------------------*/
@@ -133,33 +133,33 @@ $(document).ready(function($) {
 	} catch(err) {
 
 	}
-	
+
 	/* ---------------------------------------------------------------------- */
 	/*	Contact Map
 	/* ---------------------------------------------------------------------- */
 
 	try {
-		var fenway = [42.345573,-71.098326]; //Change a map coordinate here!
-		var markerPosition = [42.345573,-71.098326]; //Change a map marker here!
-		var markerPosition2 = [42.3342802,-71.1324866]; //Change a map marker here!
-		var markerPosition3 = [42.3388483,-71.0607322]; //Change a map marker here!
+		var fenway = [10.802605,106.605298]; //Change a map coordinate here!
+		var markerPosition = [10.802605,106.605298]; //Change a map marker here!
+		var markerPosition2 = [10.802605,106.605298]; //Change a map marker here!
+		var markerPosition3 = [10.802605,106.605298]; //Change a map marker here!
 		$('.map')
 			.gmap3({
 				center: fenway,
-				zoom: 13,
+				zoom: 17,
 				mapTypeId : google.maps.MapTypeId.ROADMAP
 			})
 			.marker({
 				position: markerPosition,
-				icon: 'images/marker.png'
+				// icon: 'assets/images/marker.png'
 			})
 			.marker({
 				position: markerPosition2,
-				icon: 'images/marker.png'
+				// icon: 'assets/images/marker.png'
 			})
 			.marker({
 				position: markerPosition3,
-				icon: 'images/marker.png'
+				// icon: 'assets/images/marker.png'
 			});
 	} catch(err) {
 
@@ -182,11 +182,11 @@ $(document).ready(function($) {
 	}
 
 	/*-------------------------------------------------*/
-	/* =  shopping cart subtotals, product increase, 
-	/* =  decrease, delete item, dropdown remove item from 
+	/* =  shopping cart subtotals, product increase,
+	/* =  decrease, delete item, dropdown remove item from
 	/* =  shopping cart
 	/*-------------------------------------------------*/
-	
+
 	var totalPrice = $('.total-price');
 	var ShippingPrice = $('.shipping-price').text();
 	var PriceAfterShipping = $('.total-price-withshipping');
@@ -265,8 +265,8 @@ $(document).ready(function($) {
 	/*-------------------------------------------------*/
 
 	$('.skills-box').appear(function() {
-		DevSolutionSkill.init('circle1'); 
-		DevSolutionSkill.init('circle2'); 
+		DevSolutionSkill.init('circle1');
+		DevSolutionSkill.init('circle2');
 		DevSolutionSkill.init('circle3');
 	});
 
@@ -282,7 +282,7 @@ $(document).ready(function($) {
 		e.preventDefault();
 
 		var $this = $(this);
-		
+
 		$.ajax({
 			type: "POST",
 			url: 'contact.php',
@@ -305,7 +305,7 @@ $(document).ready(function($) {
 		e.preventDefault();
 
 		var $this = $(this);
-		
+
 		$.ajax({
 			type: "POST",
 			url: 'reservation.php',
@@ -323,7 +323,7 @@ $(document).ready(function($) {
 			}
 		});
 	});
-	
+
 	/*-------------------------------------------------*/
 	/* =  Comming soon section
 	/*-------------------------------------------------*/
@@ -370,7 +370,7 @@ $(document).ready(function($) {
 				}
 			}, false );
 		}
-		
+
 		function scrollPage() {
 			var sy = scrollY();
 			if ( sy >= changeHeaderOn ) {
@@ -383,13 +383,13 @@ $(document).ready(function($) {
 			}
 			didScroll = false;
 		}
-		
+
 		function scrollY() {
 			return window.pageYOffset || docElem.scrollTop;
 		}
-		
+
 		init();
-		
+
 	})();
 
 });

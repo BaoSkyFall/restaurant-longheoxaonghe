@@ -151,15 +151,15 @@ $(document).ready(function($) {
 			})
 			.marker({
 				position: markerPosition,
-				// icon: 'assets/images/marker.png'
+				icon: 'assets/images/marker.png'
 			})
 			.marker({
 				position: markerPosition2,
-				// icon: 'assets/images/marker.png'
+				icon: 'assets/images/marker.png'
 			})
 			.marker({
 				position: markerPosition3,
-				// icon: 'assets/images/marker.png'
+				icon: 'assets/images/marker.png'
 			});
 	} catch(err) {
 
